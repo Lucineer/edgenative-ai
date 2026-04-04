@@ -1,37 +1,71 @@
-# Edge-Native.ai — NEXUS Knowledge Vessel
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Lucineer/capitaine/master/docs/capitaine-logo.jpg" alt="Capitaine" width="120">
+</p>
 
-Cocapn Fleet Vessel #38 — Production specs, INCREMENTS trust computation, A2A Rosetta Stone translation, and 1.2M words of accumulated edge robotics intelligence.
+<h1 align="center">edgenative-ai</h1>
 
-## Endpoints
+<p align="center">Edge-native knowledge vessel. INCREMENTS trust, VM emulator, Rosetta Stone.</p>
 
-| Route | Method | Description |
-|-------|--------|-------------|
-| `/` | GET | Landing page |
-| `/health` | GET | Health check |
-| `/api/trust/compute` | POST | Live INCREMENTS trust score computation |
-| `/api/trust/levels` | GET | Autonomy level reference |
-| `/api/vm/execute` | POST | Execute bytecode on 32-opcode NEXUS stack VM |
-| `/api/vm/opcodes` | GET | VM opcode reference |
-| `/api/rosetta/translate` | POST | Four-layer intent translation |
-| `/api/safety/validate` | POST | Validate bytecode against safety invariants |
-| `/api/knowledge` | POST | Query 1.2M-word NEXUS knowledge base |
-| `/api/specs` | GET | Production spec inventory |
-| `/api/a2a` | GET | A2A fleet protocol metadata |
+<p align="center">
+  <a href="https://github.com/Lucineer/edgenative-ai/issues">Issues</a> ·
+  <a href="#the-fleet">The Fleet</a>
+</p>
 
-## INCREMENTS Trust Example
+---
+
+**Fleet service** · Powered by [Capitaine](https://github.com/Lucineer/capitaine) · [Cocapn](https://github.com/Lucineer/cocapn)
+
+A cocapn fleet service running on Cloudflare Workers.
+
+## Quick Start
 
 ```bash
-curl -X POST https://edgenative-ai.casey-digennaro.workers.dev/api/trust/compute \
-  -H 'Content-Type: application/json' \
-  -d '{"events":[{"type":"GOOD"},{"type":"GOOD"},{"type":"BAD"}]}'
+gh repo fork Lucineer/edgenative-ai --clone
+cd edgenative-ai
+npx wrangler login
+npx wrangler deploy
 ```
 
-6 autonomy levels (L0→L5), 25:1 loss-to-gain ratio, ~27 days to full autonomy.
+## The Fleet
 
-## Upstream
 
-[SuperInstance/Edge-Native](https://github.com/SuperInstance/Edge-Native) — Production specification corpus
+<details>
+<summary><strong>⚓ The Fleet</strong></summary>
+
+**Flagship vessels**
+
+- [cocapn.ai](https://github.com/Lucineer/capitaine)
+- [personallog.ai](https://github.com/Lucineer/personallog-ai)
+- [businesslog.ai](https://github.com/Lucineer/businesslog-ai)
+- [studylog.ai](https://github.com/Lucineer/studylog-ai)
+- [makerlog.ai](https://github.com/Lucineer/makerlog-ai)
+- [playerlog.ai](https://github.com/Lucineer/playerlog-ai)
+- [dmlog.ai](https://github.com/Lucineer/dmlog-ai)
+- [reallog.ai](https://github.com/Lucineer/reallog-ai)
+- [deckboss.ai](https://github.com/Lucineer/deckboss-ai)
+
+**Fleet services**
+
+- [Fleet Catalog](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
+- [Git Agent (full)](https://github.com/Lucineer/git-agent)
+- [Cocapn Lite (minimal)](https://github.com/Lucineer/cocapn-lite)
+- [Fleet Orchestrator](https://github.com/Lucineer/fleet-orchestrator)
+- [Dead Reckoning Engine](https://github.com/Lucineer/dead-reckoning-engine)
+- [Dream Engine](https://github.com/Lucineer/dream-engine)
+- [Seed UI (5 layers)](https://github.com/Lucineer/seed-ui)
+
+**For power users**
+
+- [Cocapn Lite (tabula rasa)](https://github.com/Lucineer/cocapn-lite)
+- [Cocapn (core platform)](https://github.com/Lucineer/cocapn)
+- [ZeroClaw (framework)](https://github.com/Lucineer/zeroclaw)
+
+[View all 106 repos →](https://github.com/orgs/Lucineer/repositories)
+[Fleet manifest →](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
+
+</details>
+
 
 ## License
 
-Superinstance & Lucineer (DiGennaro et al.) — 2026
+MIT · Superinstance & Lucineer (DiGennaro et al.)
