@@ -55,6 +55,7 @@ export default {
 
     // ── Health ──
     if (path === '/health') return json({ status: 'ok', vessel: 'edgenative-ai', fleet: 'cocapn', version: '1.0.0' });
+  if (path === '/vessel.json') { try { const vj = await import('./vessel.json', { with: { type: 'json' } }); return new Response(JSON.stringify(vj.default || vj), { headers: { 'Content-Type': 'application/json' } }); } catch { return new Response('{}', { headers: { 'Content-Type': 'application/json' } }); } }
 
     // ── INCREMENTS Trust Computation ──
     if (path === '/api/trust/compute' && method === 'POST') {
