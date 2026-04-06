@@ -50,7 +50,7 @@ export default {
 └─────────────────────────────────────────────────┘<br>
 <span style="color:#4ade80">"The Ribosome, Not the Brain"</span> — each limb thinks independently
 </div></div>
-<div class="footer">Edge-Native.ai — Part of the Cocapn Fleet. <a href="https://github.com/SuperInstance/Edge-Native" style="color:#4ade80">SuperInstance/Edge-Native</a></div></body></html>`);
+<div class="footer">Edge-Native.ai — Part of the Cocapn Fleet. <a href="https://github.com/SuperInstance/Edge-Native" style="color:#4ade80">SuperInstance/Edge-Native</a></div><div style="text-align:center;padding:24px;color:#475569;font-size:.75rem"><a href="https://the-fleet.casey-digennaro.workers.dev" style="color:#64748b">⚓ The Fleet</a> · <a href="https://cocapn.ai" style="color:#64748b">Cocapn</a></div></body></html>`);
     }
 
     // ── Health ──
